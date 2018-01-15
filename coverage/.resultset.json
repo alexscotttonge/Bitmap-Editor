@@ -1,0 +1,41 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/alex1/Makers/Tech_Tests/BitmapEditor/lib/bitmap.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        5,
+        null,
+        null,
+        1,
+        1,
+        1,
+        2,
+        2,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/alex1/Makers/Tech_Tests/BitmapEditor/spec/bitmap_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1516032875
+  }
+}

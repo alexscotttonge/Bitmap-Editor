@@ -6,3 +6,4 @@ ruby '2.3.1'
 
 gem 'rspec'
 gem 'rubocop'
+gem 'simplecov', :require => false, :group => :test
