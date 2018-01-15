@@ -8,13 +8,9 @@ class Bitmap
     @matrix = Matrix.build(width, height) { 'O' }
   end
 
-  def view_matrix
-    str = ""
-    matrix.to_a.each do |row|
-      str += row.join("")
-      str += "\n"
-    end
-    str
+  def show
+    @show = Show.new(matrix)
+    @show.view_matrix
   end
 
 end
