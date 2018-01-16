@@ -22,10 +22,19 @@ describe Bitmap do
   end
 
   describe "#paint_pixel" do
-    it "clears the grid, setting all pixels to 'O' " do
+    it "colours a specific pixel with colour 'C'" do
       bitmap.build_grid(4, 4)
       bitmap.paint_pixel(2, 2, 'C')
       expect { bitmap.create }.to output("OOOO\nOOOO\nOOCO\nOOOO\n").to_stdout
+    end
+  end
+
+  describe "#clear" do
+    it "clears the grid, resetting all pixels to 'O'" do
+      bitmap.build_grid(3, 3)
+      bitmap.paint_pixel(2, 2, 'C')
+      bitmap.clear
+      expect { bitmap.create }.to output("OOO\nOOO\nOOO\n").to_stdout
     end
   end
 

@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-01-16T16:37:36+00:00">2018-01-16T16:37:36+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-01-16T16:47:52+00:00">2018-01-16T16:47:52+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.06
+         2.58
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>2</b> files in total.
-    <b>30</b> relevant lines. 
-    <span class="green"><b>30</b> lines covered</span> and
+    <b>38</b> relevant lines. 
+    <span class="green"><b>38</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -53,21 +53,21 @@
       <tr>
         <td class="strong"><a href="#ea18499b753f501e007788ed8d558265b11fd588" class="src_link" title="lib/bitmap.rb">lib/bitmap.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>23</td>
-        <td>13</td>
-        <td>13</td>
+        <td>27</td>
+        <td>15</td>
+        <td>15</td>
         <td>0</td>
-        <td>2.8</td>
+        <td>4.4</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#342e6bd19318f4bbf8ef1b59bfd3e4138077c4e2" class="src_link" title="spec/bitmap_spec.rb">spec/bitmap_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>32</td>
-        <td>17</td>
-        <td>17</td>
+        <td>41</td>
+        <td>23</td>
+        <td>23</td>
         <td>0</td>
-        <td>1.5</td>
+        <td>1.4</td>
       </tr>
       
     </tbody>
@@ -91,8 +91,8 @@
     <h3>lib/bitmap.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>13</b> relevant lines. 
-      <span class="green"><b>13</b> lines covered</span> and
+      <b>15</b> relevant lines. 
+      <span class="green"><b>15</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -118,16 +118,16 @@
           <code class="ruby">  def build_grid(n, m)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="4">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="4">
+          <span class="hits">5</span>
           
           <code class="ruby">    if n.between?(1, 250) &amp;&amp; m.between?(1, 250)</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="5">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="12" data-linenumber="5">
+          <span class="hits">12</span>
           
-          <code class="ruby">      @matrix = Array.new(m){ Array.new(n, &#39;O&#39;) }</code>
+          <code class="ruby">      @matrix = Array.new(m) { Array.new(n, &#39;O&#39;) }</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="6">
@@ -160,26 +160,26 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="11">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="11">
+          <span class="hits">3</span>
           
           <code class="ruby">    str = &quot;&quot;</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="12">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="12">
+          <span class="hits">3</span>
           
           <code class="ruby">    @matrix.each do |row|</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="13">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="9" data-linenumber="13">
+          <span class="hits">9</span>
           
           <code class="ruby">      str += row.join(&quot;&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="14">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="9" data-linenumber="14">
+          <span class="hits">9</span>
           
           <code class="ruby">      str += &quot;\n&quot;</code>
         </li>
@@ -190,8 +190,8 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="16">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="16">
+          <span class="hits">3</span>
           
           <code class="ruby">    puts str</code>
         </li>
@@ -214,8 +214,8 @@
           <code class="ruby">  def paint_pixel(x, y, colour)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="20">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="20">
+          <span class="hits">2</span>
           
           <code class="ruby">    @matrix[x][y] = colour</code>
         </li>
@@ -232,7 +232,31 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def clear</code>
+        </li>
+      
+        <li class="covered" data-hits="13" data-linenumber="24">
+          <span class="hits">13</span>
+          
+          <code class="ruby">    @matrix.each { |row| row.map{&#39;O&#39;} }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
           
           
           <code class="ruby">end</code>
@@ -248,8 +272,8 @@
     <h3>spec/bitmap_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>17</b> relevant lines. 
-      <span class="green"><b>17</b> lines covered</span> and
+      <b>23</b> relevant lines. 
+      <span class="green"><b>23</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -281,8 +305,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="5">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="5">
+          <span class="hits">6</span>
           
           <code class="ruby">  subject(:bitmap) { described_class.new }</code>
         </li>
@@ -404,7 +428,7 @@
         <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;clears the grid, setting all pixels to &#39;O&#39; &quot; do</code>
+          <code class="ruby">    it &quot;colours a specific pixel with colour &#39;C&#39;&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="26">
@@ -443,7 +467,61 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;#clear&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;clears the grid, resetting all pixels to &#39;O&#39;&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      bitmap.build_grid(3,3)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      bitmap.paint_pixel(2, 2, &#39;C&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      bitmap.clear</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="37">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      expect { bitmap.create }.to output(&quot;OOO\nOOO\nOOO\n&quot;).to_stdout</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
           
           
           <code class="ruby">end</code>
