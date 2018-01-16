@@ -21,4 +21,12 @@ describe Bitmap do
     end
   end
 
+  describe "#paint_pixel" do
+    xit "clears the grid, setting all pixels to 'O' " do
+      bitmap.build_grid(4, 4)
+      bitmap.paint_pixel(2, 2, 'C')
+      expect { bitmap.create }.to output("OOOOO\nOOOOO\nOOCOO\nOOOO").to_stdout
+    end
+  end
+
 end
