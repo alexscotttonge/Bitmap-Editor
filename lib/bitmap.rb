@@ -16,4 +16,8 @@ class Bitmap
     puts str
   end
 
+  def paint_pixel(x, y, colour)
+    @matrix[x][y] = colour
+  end
+
 end
