@@ -10,7 +10,7 @@ class Show
       str += row.join("")
       str += "\n"
     end
-    str
+    puts str
   end
 
 
