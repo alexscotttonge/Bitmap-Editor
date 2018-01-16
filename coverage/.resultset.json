@@ -7,42 +7,16 @@
         1,
         null,
         1,
-        null,
-        1,
         5,
         null,
         null,
         1,
         1,
         1,
-        null,
-        null,
-        null
-      ],
-      "/Users/alex1/Makers/Tech_Tests/BitmapEditor/lib/command_line.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/alex1/Makers/Tech_Tests/BitmapEditor/lib/show.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
         2,
         2,
         null,
         1,
-        null,
         null,
         null,
         null
@@ -58,28 +32,8 @@
         null,
         null,
         null
-      ],
-      "/Users/alex1/Makers/Tech_Tests/BitmapEditor/spec/command_line_spec.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        2,
-        1,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/alex1/Makers/Tech_Tests/BitmapEditor/spec/show_spec.rb": [
-        1,
-        null,
-        null
       ]
     },
-    "timestamp": 1516102083
+    "timestamp": 1516115379
   }
 }
