@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-01-15T19:36:17+00:00">2018-01-15T19:36:17+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-01-16T11:28:03+00:00">2018-01-16T11:28:03+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.3
+         1.23
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>4</b> files in total.
-    <b>23</b> relevant lines. 
-    <span class="green"><b>23</b> lines covered</span> and
+    <b>6</b> files in total.
+    <b>33</b> relevant lines. 
+    <span class="green"><b>33</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -61,6 +61,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#af83bc977c8fcad7b8217c557ec408d9f24eb4b6" class="src_link" title="lib/command_line.rb">lib/command_line.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>7</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#96af66a9e12b53c8d7c1206f6e8093bc0aeb4b50" class="src_link" title="lib/show.rb">lib/show.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>17</td>
@@ -78,6 +88,16 @@
         <td>5</td>
         <td>0</td>
         <td>1.2</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#5990686a2f4997abfd62881ac76befd37dba242d" class="src_link" title="spec/command_line_spec.rb">spec/command_line_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>13</td>
+        <td>7</td>
+        <td>7</td>
+        <td>0</td>
+        <td>1.1</td>
       </tr>
       
       <tr>
@@ -211,6 +231,67 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="af83bc977c8fcad7b8217c557ec408d9f24eb4b6">
+  <div class="header">
+    <h3>lib/command_line.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class CommandLine</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def get_input</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    $stdin.gets.chomp</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
           
           
           <code class="ruby">end</code>
@@ -389,7 +470,7 @@
         <li class="covered" data-hits="2" data-linenumber="6">
           <span class="hits">2</span>
           
-          <code class="ruby">      expect { bitmap.show}.to output(&quot;OO\nOO\n&quot;).to_stdout</code>
+          <code class="ruby">      expect { bitmap.show }.to output(&quot;OO\nOO\n&quot;).to_stdout</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
@@ -411,6 +492,103 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="5990686a2f4997abfd62881ac76befd37dba242d">
+  <div class="header">
+    <h3>spec/command_line_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>7</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;command_line&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe CommandLine do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;#get_input&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;takes an input from stdin&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      commandline = CommandLine.new</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="8">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      allow(STDIN).to receive(:gets) { &#39;I&#39; }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(commandline.get_input).to eq &#39;I&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby">end</code>
