@@ -2,7 +2,7 @@ describe Bitmap do
 
   IntegerValueError = Class.new(StandardError)
 
-  subject(:bitmap) { Bitmap.new }
+  subject(:bitmap) { described_class.new }
 
   describe "#build_grid" do
     it 'raises an error if N or M dimension is higher than 250' do

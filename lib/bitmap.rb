@@ -9,7 +9,7 @@ class Bitmap
 
   def create
     str = ""
-    @matrix.to_a.each do |row|
+    @matrix.each do |row|
       str += row.join("")
       str += "\n"
     end
