@@ -48,4 +48,12 @@ describe Bitmap do
     end
   end
 
+  describe '#draw_horizontal' do
+    it 'colours a horizontal line on the grid' do
+      bitmap.build_grid(5, 5)
+      bitmap.draw_horizontal(1, 4, 5, 'C')
+      expect { bitmap.create }.to output("OOOOO\nOOOOO\nOOOOO\nOOOOO\nCCCCO\n").to_stdout
+    end
+  end
+
 end

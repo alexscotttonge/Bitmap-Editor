@@ -32,4 +32,10 @@ class Bitmap
     end
   end
 
+  def draw_horizontal(column_start, column_finish, row, colour)
+    (column_start..column_finish).each do |i|
+      matrix[row - 1][i - 1] = colour
+    end
+  end
+
 end
