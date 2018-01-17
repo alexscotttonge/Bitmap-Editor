@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe Bitmap do
 
   IntegerValueError = Class.new(StandardError)
@@ -35,6 +37,14 @@ describe Bitmap do
       bitmap.paint_pixel(2, 2, 'C')
       bitmap.clear
       expect { bitmap.create }.to output("OOO\nOOO\nOOO\n").to_stdout
+    end
+  end
+
+  describe '#draw_vertical' do
+    it 'colours a vertical line on the grid' do
+      bitmap.build_grid(5, 5)
+      bitmap.draw_vertical(2, 2, 5, 'C')
+      expect { bitmap.create }.to output("OOOOO\nOCOOO\nOCOOO\nOCOOO\nOCOOO\n").to_stdout
     end
   end
 
