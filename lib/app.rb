@@ -3,7 +3,7 @@ require_relative 'bitmap'
 class App
 
   def run(file)
-    File.open(file).each_line.with_index(1) do |line, line_number|
+    File.open(file).each_line do |line|
       command, *args = line.chomp.split(" ")
       execute(command, *args)
     end
