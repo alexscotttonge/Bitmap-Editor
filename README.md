@@ -17,7 +17,7 @@ There are 6 supported commands:
 ## Approach
 - I started building the program according to the spec set out in the overview doc. This resulted in a dead-end from a design perspective, with an over-complicated build and poor functionality.
 - Facing this point I decided to create a new branch using the initial folder setup with a blank slate for the actual build. This approach adheres much more to an 'MVP' style keeping the program as simple as possible and building complexity step-by-step.
-- I looked at various testing methods for the App class but couldn't find a satisfactory way to test behaviour. I could build a passing solution to the test but it would involve 'spiked' untested code so I decided to go as far as I could with code which was TDD'd.
+- I looked at various testing methods for the App class but couldn't find a satisfactory way to test behaviour. I could build a passing solution according to the final spec but it would involve 'spiked' untested code so I decided to go as far as I could with code which was TDD'd.
 
 ### Test coverage
 - 96%
