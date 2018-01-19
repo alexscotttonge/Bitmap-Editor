@@ -1,3 +1,0 @@
-describe Show do
-
-end

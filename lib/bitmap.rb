@@ -1,16 +1,41 @@
-require 'matrix'
-
 class Bitmap
 
   attr_reader :matrix
 
-  def initialize(width, height)
-    @matrix = Matrix.build(width, height) { 'O' }
+  def build_grid(n, m)
+    if n.between?(1, 250) && m.between?(1, 250)
+      @matrix = Array.new(m) { Array.new(n, 'O') }
+    else raise IntegerValueError, 'Number must be between 1-250'
+    end
   end
 
-  def show
-    @show = Show.new(matrix)
-    @show.view_matrix
+  def create
+    str = ""
+    matrix.each do |row|
+      str += row.join("")
+      str += "\n"
+    end
+    puts str
+  end
+
+  def paint_pixel(x, y, colour)
+    matrix[x][y] = colour
+  end
+
+  def clear
+    matrix.each { |row| row.map! { 'O' } }
+  end
+
+  def draw_vertical(column, row_start, row_finish, colour)
+    (row_start..row_finish).each do |i|
+      matrix[i - 1][column - 1] = colour
+    end
+  end
+
+  def draw_horizontal(column_start, column_finish, row, colour)
+    (column_start..column_finish).each do |i|
+      matrix[row - 1][i - 1] = colour
+    end
   end
 
 end

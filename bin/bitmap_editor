@@ -1,6 +1,4 @@
 #!/usr/bin/env ruby
+require './lib/app'
 
-require './lib/command_line.rb'
-
-commandline = CommandLine.new
-commandline.get_input
+App.new.run ARGV.first
