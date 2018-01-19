@@ -4,11 +4,11 @@ describe App do
 
   subject(:app) { described_class.new }
 
-  describe '#run' do
-    it 'should be able to read a filename' do
-      file = double('example.txt')
-      expect(File).to receive(:open).with(file)
-      app.run(file)
+  describe '#execute' do
+    let(:m) { 2 }
+    let(:n) { 2 }
+    it 'creates an MxN grid' do
+      expect{ app.execute('I', m, n) }.to output("OO\nOO\n").to_stdout
     end
   end
 
